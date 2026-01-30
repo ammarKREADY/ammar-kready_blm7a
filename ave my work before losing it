@@ -1,0 +1,19 @@
+[33m88f54e9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{2026-01-30 12:30:38 +0300}: reset: moving to 88f54e9
+[33m33f1b13[m HEAD@{2026-01-30 12:26:23 +0300}: reset: moving to 33f1b13
+[33m88f54e9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{2026-01-30 11:51:50 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33m88f54e9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{2026-01-30 11:16:54 +0300}: commit: Initial project commit
+[33m33f1b13[m HEAD@{2026-01-30 11:05:54 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33m33f1b13[m HEAD@{2025-06-18 04:45:52 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33m33f1b13[m HEAD@{2025-06-18 04:37:38 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33m33f1b13[m HEAD@{2025-06-18 04:36:51 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33m33f1b13[m HEAD@{2025-06-18 04:34:20 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33m33f1b13[m HEAD@{2025-06-18 04:34:20 +0300}: commit: first commit
+[33md0af113[m HEAD@{2025-06-18 04:30:27 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33md0af113[m HEAD@{2025-06-18 04:30:09 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33md0af113[m HEAD@{2025-06-18 04:30:08 +0300}: commit: first commit
+[33m7a374b8[m HEAD@{2025-06-18 04:28:34 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33m7a374b8[m HEAD@{2025-06-18 04:17:10 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33m7a374b8[m HEAD@{2025-06-18 04:12:09 +0300}: Branch: renamed refs/heads/main to refs/heads/main
+[33m7a374b8[m HEAD@{2025-06-18 04:06:40 +0300}: commit: Initial commit
+[33m6d1edda[m HEAD@{2025-06-18 04:06:01 +0300}: Branch: renamed refs/heads/master to refs/heads/main
+[33m6d1edda[m HEAD@{2025-06-18 04:06:01 +0300}: commit (initial): first commit

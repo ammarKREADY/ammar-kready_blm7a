@@ -1,0 +1,27 @@
+deptrac:
+  paths:
+    - app
+    - resources/views
+
+  exclude_files:
+    - '#.*test.*#'
+
+  layers:
+    - name: Models
+      collectors:
+        - type: directory
+          value: app/Models
+    - name: Controllers
+      collectors:
+        - type: directory
+          value: app/Http/Controllers
+    - name: Views
+      collectors:
+        - type: directory
+          value: resources/views
+
+  ruleset:
+    Controllers:
+      - Models
+    Views
+      - Controllers

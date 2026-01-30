@@ -1,0 +1,96 @@
+
+DirectoryIndex public/index.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+RewriteRule ^public/media/ - [L]
+
+RewriteRule ^public/media/ - [L]
+RewriteRule ^ public/index.php [L]
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+ <Directory "https://altabiaa.clay-code.tech/public/media">
+        AllowOverride All
+        Require all granted
+    </Directory>
+    
+  
+</IfModule>
+# <IfModule mod_rewrite.c>
+# RewriteEngine On
+
+# # إعادة تعيين الرأس Authorization
+# RewriteCond %{HTTP:Authorization} .
+# RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# # تمرير الطلب مباشرة للملف إذا كان المسار يبدأ بـ 'public/media/'
+# RewriteRule ^public/media/ - [L]
+
+# # السماح بالكتابة في دليل 'public/media/directory'
+# <Directory public/media/>
+#     AllowOverride None
+#     Order allow,deny
+#     Allow from all
+# </Directory>
+
+# # توجيه كافة الأساليب إلى 'public/index.php'
+# RewriteRule ^ public/index.php [L]
+
+# # إعادة تعيين الرأس Authorization مرة أخرى
+# RewriteCond %{HTTP:Authorization} ^(.*)
+# RewriteRule .* - [E=HTTP_AUTHORIZATION:%1]
+
+# # السماح بالقراءة والكتابة للجميع
+# <IfModule mod_authz_core.c>
+#     Require all granted
+# </IfModule>
+# <IfModule mod_rewrite.c>
+# RewriteEngine On
+# RewriteCond %{HTTP:Authorization} .
+# RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#   RewriteRule ^public/media/ - [L]
+# RewriteRule ^ public/index.php [L]
+# RewriteCond %{HTTP:Authorization} ^(.*)
+# RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+# </IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php8_module>
+   php_flag display_errors On
+   php_value max_execution_time 90
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 1024M
+   php_value post_max_size 512M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php82"
+   php_value upload_max_filesize 512M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors On
+   php_value max_execution_time 90
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 1024M
+   php_value post_max_size 512M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php82"
+   php_value upload_max_filesize 512M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php83” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php83 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
